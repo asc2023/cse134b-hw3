@@ -44,7 +44,7 @@ body{
 }
 h1{
     text-align: center;
-    font-size: ;
+    font-size: 1.5rem;
 }
 .navbar{
     border-radius: 15px;
@@ -64,6 +64,14 @@ h1{
     margin: 0;
     padding: 0;
     display: flex;
+}
+@media screen and (min-width: 480px) {
+    .contents {
+        border:2px solid red;
+    }
+    .navbar{
+        border:2px solid red;
+    }
 }
 .navbar-links li{
     border-radius: 15px;
@@ -109,9 +117,22 @@ footer li:hover{
     width:100%;
     flex-direction: column;
     border-radius: 4%;
-    background-color: #333;
+    background-color: var(--primary-color);
     justify-content:center;
     align-items: center;
+    cursor:pointer;
+}
+.welcome-container:hover{
+    animation: flipV 1s linear;
+}
+@keyframes flipV {
+    50%{
+        transform: rotateX(180deg);
+    }
+    to{
+        transform: rotateX(360deg);
+    }
+    
 }
 .profile-card{
     width:50%;
@@ -178,13 +199,23 @@ fieldset{
 button{
     background:linear-gradient(to bottom right, red, yellow);
     border-radius:15%;
+    color:white;
+    border:2px solid white;
+}
+fieldset{
+    background: linear-gradient(to bottom right, red, yellow);;
+    box-shadow:5px 10px #000000;
 }
 button:hover{
-    width:10rem;
-    height:10rem;
+    width: 5rem;
+    height:3rem;
     cursor:pointer;
     filter:brightness(110%);
     transform:skewY(20deg);
-    font-size:2.5rem;
+    font-size:1rem;
+    border-radius:50%;
     text-transform:uppercase
+}
+.rickroll{
+    
 }
