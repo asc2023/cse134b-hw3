@@ -4,54 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles\style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <main>
-        <nav class="navbar" id="start">
-            <div class="logo">My Portfolio</div>
-            <div class="navbar-links">
-                <ul>
-                    <li><a href="/index.html">My Profile</a></li>
-                    <li><a href="/hobbies.html">My Hobbies</a></li>
-                    <li><a href="/memes.html">Memes and Videos</a></li>
-                    <li><a href="/contactme.html">Contact Me</a></li>
-
-                </ul>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Me</a></li>
+            <li><a href="#">Javascript</a></li>
+            <li><a href="#">Comments</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <div class="main">
+            <h1 class="headings">Welcome to <br>ANTHONY CHEN's <br> Portfolio</h1>
+            <button class="btn">
+                Explore
+            </button>
+        </div>
+    </section>
+    <section id="about">
+        <h1 class="headings">ABOUT ME</h1>
+        <div id="pic">    
+            <img src="images/Anthony.jpg" alt="profile-pic">
+            <div id="intro">
+                <h2>ANTHONY CHEN</h2>
+                <p>I am a fourth year CSE major at UCSD. I </p>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <h1 class="headings">PORTFOLIO</h1>
+        <div class="gallery">
+            <img src="images/p7.png" alt="react-img" >
+   
+            <img src="images/p3.png" alt="c#-img" >
+            <img src="images/p4.png" alt="Python-img">
+            
+            <img src="images/p6.png" alt="javascript-img">
+        </div>
+    </section>
+    <section class="services">
+        <h1 class="headings">Services</h1>
+        <div class="row">
+            <div class="box">
+                <h1 class="headings">Website Design</h1>
+                <p>asdfasdfasdfasdf</p>
             </div>
             
-        </nav>
-        <div class="contents">
-            <div class="welcome-container">
-                 <h1>Welcome To My Website</h1>
-                <div class="profile-card">
-                     <picture>
-                    <source media="(min-width:650px)" srcset="assets\images\testdraw.png">
-                    <source media="(min-width:465px)" srcset="assets\images\testdraw.png">
-                    <img id="drawpic" src="assets\images\testdraw.png" alt="art" style="width:auto;" width="300px" height="450px">
-                    </picture>
-                    <ul>
-                        <li><b>NAME:</b> ANTHONY CHEN</li>
-                        <li><b>SCHOOL:</b> UCSD</li>
-                        <li><b>MAJOR:</b> COMPUTER SCIENCE</li>
-                        <li><b>YEAR:</b> FOURTH</li>
-                        <li><b>FAVORITE QUOTE:</b> HASAKI</li>
-                        <li><b>STATUS:</b> ALIVE</li>
-                    </ul>
-                </div>
-               
-           
         </div>
-    </main>
-    <footer>
-        <hr />
-        <ul>
-          <li>
-            <a href="#">Return to Top</a>
-          </li>
-        </ul>
-      </footer>
+    </section>
 </body>
 </html>
